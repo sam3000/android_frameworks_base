@@ -450,10 +450,4 @@ interface INetworkManagementService
     void setAllowOnlyVpnForUids(boolean enable, in UidRange[] uidRanges);
 
     boolean isNetworkRestricted(int uid);
-
-    /**
-     * Restrict UID from accessing data/wifi
-     */
-    void restrictAppOnData(int uid, boolean restrict);
-    void restrictAppOnWlan(int uid, boolean restrict);
 }
