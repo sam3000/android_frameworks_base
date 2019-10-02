@@ -452,9 +452,8 @@ interface INetworkManagementService
     boolean isNetworkRestricted(int uid);
 
     /**
-     * Restrict UID from accessing mobile data/vpn/wifi
+     * Restrict UID from accessing data/wifi
      */
     void restrictAppOnData(int uid, boolean restrict);
-    void restrictAppOnVpn(int uid, boolean restrict);
     void restrictAppOnWlan(int uid, boolean restrict);
 }
